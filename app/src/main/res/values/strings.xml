@@ -7,7 +7,7 @@
     <string name="imc_desc">IMC é a sigla para Índice de Massa Corporal que serve para avaliar o peso do indivíduo em relação à sua altura e assim indicar se está dentro do peso ideal, acima ou abaixo do peso desejado.\n\nPreencha os campos de peso e altura para descobrir o seu IMC </string>
     <string name="calc">Calcular</string>
     <string name="important">Importate!!</string>
-    <string name="fields_message">Os campos devem ser preenchidos e diferente de zero</string>
+    <string name="fields_message">Verifique se os campos estão preenchidos.\nPrecisam ser diferentes de zero.</string>
     <string name="imc_severely_low_weight">Severamente abaixo do peso</string>
     <string name="imc_very_low_weight">Muito abaixo do peso</string>
     <string name="imc_low_weight">Abaixo do peso</string>
@@ -32,7 +32,7 @@
     <string name="text_age">Idade</string>
     <string name="man">Homem</string>
     <string name="women">Mulher</string>
-    <string name="whats_your_name">Qual seu nome ?</string>
+    <string name="whats_your_name">Digite seu nome ?</string>
     <string name="calculate">Calcular</string>
     <string name="name_user">Nome User</string>
     <string name="recalculate">Novo Calculo de IMC</string>

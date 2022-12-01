@@ -9,6 +9,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.app.iury.appimc.databinding.ActivityImcBinding
+
 //tela 2
 class ActivitImc : AppCompatActivity(), View.OnClickListener {
 
@@ -35,16 +36,18 @@ class ActivitImc : AppCompatActivity(), View.OnClickListener {
     override fun onClick(view: View) {
         if (view.id == R.id.btn_send) {
             if (!validateInputs()) {//cenário triste
-               // Toast.makeText(this, R.string.fields_message, Toast.LENGTH_SHORT).show()
+
 
                 //caixa PopUp
                 val dialog = AlertDialog.Builder(this)
                 dialog.setTitle(R.string.important)
                 dialog.setMessage(R.string.fields_message)
-                dialog.setPositiveButton(android.R.string.ok, object :DialogInterface.OnClickListener{
-                    override fun onClick(p0: DialogInterface?, p1: Int) {
-                    }
-                })
+                dialog.setPositiveButton(
+                    android.R.string.ok,
+                    object : DialogInterface.OnClickListener {
+                        override fun onClick(p0: DialogInterface?, p1: Int) {
+                        }
+                    })
                 dialog.create().show()
 
             } else {// cenário feliz
@@ -80,9 +83,11 @@ class ActivitImc : AppCompatActivity(), View.OnClickListener {
     private fun validateInputs(): Boolean {
         val weight = binding.imcWeight.text.toString()
         val height = binding.imcHeight.text.toString()
+        val name = binding.editName.text.toString()
 
         return (weight.isNotEmpty() &&
                 height.isNotEmpty() &&
+                name.isNotEmpty()   &&
                 !weight.startsWith("0") &&
                 !height.startsWith("0"))
     }
