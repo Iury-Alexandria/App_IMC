@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroud_black"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".ImcActivity">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="Informe Seus Dados"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view_ctn_01"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/container_componets"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_title" />
+
+        <TextView
+            android:id="@+id/text_height"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="@string/height_text"
+            android:textColor="@color/gray_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/view_ctn_01"
+            app:layout_constraintStart_toStartOf="@+id/view_ctn_01"
+            app:layout_constraintTop_toTopOf="@id/view_ctn_01" />
+
+        <EditText
+            android:id="@+id/imc_height"
+            android:layout_width="150dp"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="ex: 180cm"
+            android:inputType="number"
+            android:textColor="@color/pink"
+            android:textColorHint="@color/pink"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/view_ctn_01"
+            app:layout_constraintStart_toStartOf="@+id/view_ctn_01"
+            app:layout_constraintTop_toBottomOf="@id/text_height" />
+
+        <View
+            android:id="@+id/view_ctn_02"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/container_componets"
+            app:layout_constraintEnd_toStartOf="@id/view_ctn_03"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_ctn_01"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <TextView
+            android:id="@+id/text_weight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="@string/text_weight"
+            android:textColor="@color/gray_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/view_ctn_02"
+            app:layout_constraintStart_toStartOf="@+id/view_ctn_02"
+            app:layout_constraintTop_toTopOf="@id/view_ctn_02" />
+
+        <EditText
+            android:id="@+id/imc_weight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:hint="ex: 70"
+            android:inputType="number"
+            android:textColor="@color/pink"
+            android:textColorHint="@color/pink"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/view_ctn_02"
+            app:layout_constraintStart_toStartOf="@+id/view_ctn_02"
+            app:layout_constraintTop_toBottomOf="@id/text_weight" />
+
+        <View
+            android:id="@+id/view_ctn_03"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/container_componets"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/view_ctn_02"
+            app:layout_constraintTop_toBottomOf="@id/view_ctn_01" />
+
+        <TextView
+            android:id="@+id/text_age"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="@string/text_age"
+            android:textColor="@color/gray_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/view_ctn_03"
+            app:layout_constraintStart_toStartOf="@+id/view_ctn_03"
+            app:layout_constraintTop_toTopOf="@id/view_ctn_03" />
+
+        <EditText
+            android:id="@+id/edit_age"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="ex: 20"
+            android:inputType="number"
+            android:textColor="@color/pink"
+            android:textColorHint="@color/pink"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/view_ctn_03"
+            app:layout_constraintStart_toStartOf="@+id/view_ctn_03"
+            app:layout_constraintTop_toBottomOf="@id/text_age" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/container_componets"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:hint="@string/whats_your_name"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:textColor="@color/pink"
+            android:textColorHint="@color/pink"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_ctn_03" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/container_componets"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="@string/calculate"
+            android:textColor="@color/pink"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
