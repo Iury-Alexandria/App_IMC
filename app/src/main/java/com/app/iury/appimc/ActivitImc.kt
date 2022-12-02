@@ -53,11 +53,11 @@ class ActivitImc : AppCompatActivity(), View.OnClickListener {
             } else {// cenário feliz
 
                 // passando a função calcImc como variável na string que mostra na tela 3
-                val imcResult = calcImc()
-                val resultImcFloat = getString(R.string.imc_response, imcResult)
-                Log.d("Teste", "resultado: $resultImcFloat")
+                //val imcResult = calcImc()
+                val resultImcFloat = getString(R.string.imc_response, calcImc())
+
                 val imcText = getString(mensageImc(calcImc()))
-                Log.d("Teste2", "resultado: $imcText")
+
                 val name = binding.editName.text.toString()
 
                 //instânciando a classe NaegationData
@@ -68,13 +68,6 @@ class ActivitImc : AppCompatActivity(), View.OnClickListener {
                 intent.putExtra("ObjMensagem", navegationData)
                 startActivity(intent)
 
-                //passando os dados por variáveis
-                /*
-                val intent = Intent(this, ResultImc::class.java)
-                intent.putExtra("imcText", resultImcFloat)
-                intent.putExtra("mensageImc", imcText)
-                startActivity(intent)
-                */
             }
         }
     }

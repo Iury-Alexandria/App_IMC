@@ -34,9 +34,6 @@ class ResultImc : AppCompatActivity(), View.OnClickListener {
         binding.textResultImc.setText(dadosTela1.imcResult)
         binding.textMensageImc.text = dadosTela1.mensageImc
 
-        // recuperando os dados da tela 2 por variáveis
-      /*  binding.textResultImc.text = intent.getStringExtra("imcText").toString()
-        binding.textMensageImc.text = intent.getStringExtra("mensageImc").toString()*/
     }
 
     //evento de cliques
